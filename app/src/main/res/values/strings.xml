@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">一个</string>
+    <string name="title_activity_guide">GuideActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_list">HomeListActivity</string>
+
+    <string name="movie_title">电影故事</string>
+    <string name="movie_sroce">评分</string>
+    <string name="movie_comment">评价列表</string>
+    <string name="movie_dic_movielist">一个·电影表</string>
+    <string name="movie_dic_moviephoto">剧照</string>
+    <string name="movie_dic_moviedic">影片详情</string>
+
+    <string name="his_singer">他的歌曲</string>
+    <string name="his_collection">他的收藏</string>
+    <string name="image_text">图文</string>
+    <string name="article">文章</string>
+    <string name="movie">电影</string>
+    <string name="monthList">时间列表</string>
+    <string name="scorecomplete">完成</string>
+    <string name="scoreshare">分享成绩单</string>
+    <string name="scorecomment">评论</string>
+    <string name="commplete">完成</string>
+    <string name="comment_hint">字字珍贵，落笔无悔</string>
+
+</resources>

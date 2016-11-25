@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="home_data"
+            type="com.example.oneapplication.bean.HomeBean.DataBean"></variable>
+
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/home_diary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diary"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小记"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/home_laud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laud"
+            android:layout_weight="1"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@{String.valueOf(home_data.sharenum)}"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/home_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_image"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_above="@id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_background"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/image_home"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                app:img = "@{home_data.hp_img_url}"
+                />
+
+            <TextView
+                android:layout_below="@id/image_home"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@{home_data.hp_title}"/>
+
+            <TextView
+                android:layout_below="@id/image_home"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@{home_data.hp_author}"/>
+
+            <TextView
+                android:layout_below="@id/image_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@{home_data.hp_content}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:text="@{home_data.hp_makettime}"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</layout>
